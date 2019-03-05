@@ -29,6 +29,28 @@ public class PetTest {
     }
 
     @Test
+    public void getNameTest(){
+        // given
+        Pet pet = new Pet("name");
+        String expected = "name";
+        // when
+        String actual = pet.getName();
+        // then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void setNameTest(){
+        // given
+        Pet pet = new Pet();
+        String expected = "Pet";
+        // when
+        String actual = pet.name;
+        // then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
     public void speakTest(){
         // given
         Pet pet = new Pet();

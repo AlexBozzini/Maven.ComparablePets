@@ -15,6 +15,10 @@ public class Pet {
         return name;
     }
 
+    public void setName(){
+        this.name = name;
+    }
+
     public String speak(){
         return "pet sound";
     }

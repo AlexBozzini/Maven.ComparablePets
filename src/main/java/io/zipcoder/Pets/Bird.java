@@ -3,7 +3,16 @@ package io.zipcoder.Pets;
 import io.zipcoder.Pets.Pet;
 
 public class Bird extends Pet {
-    public Bird(String petsName) {
-        super();
+    public Bird(String name) {
+        super(name);
+    }
+
+    public Bird(){
+        super.name = "Disco";
+    }
+
+    @Override
+    public String speak(){
+        return "tweet";
     }
 }
