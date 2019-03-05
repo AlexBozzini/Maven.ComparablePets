@@ -1,8 +1,10 @@
 package io.zipcoder;
 
 
-public class Application {
-    public static void getNumberOfPets(){
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
-    }
+public class Application {
+    public static IOConsole ioconsole = new IOConsole();
 }
