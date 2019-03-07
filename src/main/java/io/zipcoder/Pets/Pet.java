@@ -1,7 +1,7 @@
 package io.zipcoder.Pets;
 
 public class Pet {
-    public String name;
+    private String name;
 
     public Pet(){
         this.name = "Pet";
@@ -15,7 +15,7 @@ public class Pet {
         return name;
     }
 
-    public void setName(){
+    public void setName(String name){
         this.name = name;
     }
 

@@ -8,7 +8,7 @@ public class Bird extends Pet {
     }
 
     public Bird(){
-        super.name = "Disco";
+        this("Disco");
     }
 
     @Override

@@ -22,7 +22,7 @@ public class DogTests {
         Dog dog = new Dog("Neeko");
         String expected = "Neeko";
         // when
-        String actual = dog.name;
+        String actual = dog.getName();
         // then
         Assert.assertEquals(expected, actual);
     }

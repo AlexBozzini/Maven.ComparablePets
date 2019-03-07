@@ -23,7 +23,7 @@ public class PetTest {
         Pet pet = new Pet("name");
         String expected = "name";
         // when
-        String actual = pet.name;
+        String actual = pet.getName();
         // then
         Assert.assertEquals(expected, actual);
     }
@@ -45,7 +45,7 @@ public class PetTest {
         Pet pet = new Pet();
         String expected = "Pet";
         // when
-        String actual = pet.name;
+        String actual = pet.getName();
         // then
         Assert.assertEquals(expected, actual);
     }

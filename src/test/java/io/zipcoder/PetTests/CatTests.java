@@ -22,7 +22,7 @@ public class CatTests {
         Cat cat = new Cat("Toast");
         String expected = "Toast";
         // when
-        String actual = cat.name;
+        String actual = cat.getName();
         // then
         Assert.assertEquals(expected, actual);
     }

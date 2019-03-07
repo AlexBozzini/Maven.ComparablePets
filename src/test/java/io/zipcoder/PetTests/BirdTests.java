@@ -22,7 +22,7 @@ public class BirdTests {
         Bird bird = new Bird("Bowie");
         String expected = "Bowie";
         // when
-        String actual = bird.name;
+        String actual = bird.getName();
         // then
         Assert.assertEquals(expected, actual);
     }
