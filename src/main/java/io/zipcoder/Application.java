@@ -13,26 +13,30 @@ public class Application {
 
     public static void main(String[] args) {
         Integer numberOfPets = ioconsole.getIntegerInput("How many pets do you have?");
-        Map<Pet, String> pets = new HashMap<Pet, String>();
+        Map<String, String> pets = new HashMap<String, String>();
         for (int i = 0; i < numberOfPets; i++){
             String petType = ioconsole.getStringInput("What kind of pet is it?");
             petType = petType.toLowerCase();
             if (petType.equals("dog")){
                 String petsName = ioconsole.getStringInput("What is its name?");
                 Pet dog = new Dog(petsName);
-                pets.put(dog, petsName);
+                pets.put(petsName, dog.speak());
             } else if (petType.equals("cat")){
                 String petsName = ioconsole.getStringInput("What is its name?");
                 Pet cat = new Cat(petsName);
-                pets.put(cat, petsName);
+                pets.put(petsName, cat.speak());
             } else if (petType.equals("bird")){
                 String petsName = ioconsole.getStringInput("What is its name?");
                 Pet bird = new Bird(petsName);
-                pets.put(bird, petsName);
+                pets.put(petType, bird.speak());
             } else {
                 ioconsole.print("Wrong input type");
                 i = i - 1;
             }
+        }
+        Map<String, String> reversedMap = new TreeMap<String, String>(pets);
+        for (Map.Entry entry : reversedMap.entrySet()) {
+            System.out.println(entry.getKey() + ", " + entry.getValue());
         }
     }
 }
